@@ -1,0 +1,31 @@
+[package]
+name = "brightd-volumed"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[[bin]]
+name = "volumed"
+path = "src/volumed.rs"
+
+[[bin]]
+name = "volumectl"
+path = "src/volumectl.rs"
+
+[[bin]]
+name = "brightd"
+path = "src/brightd.rs"
+
+[[bin]]
+name = "brightctl"
+path = "src/brightctl.rs"
+
+[dependencies]
+gtk = "0.16.1"
+dbus = "0.9.6"
+dbus-crossroads = "0.5.1"
+clap = { version = "4.0.23", features = ["derive"] }
+
+[profile.release]
+strip = "debuginfo"

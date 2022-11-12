@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.40.0 -->
+<interface>
+  <requires lib="gtk+" version="3.24"/>
+  <object class="GtkApplicationWindow" id="ui">
+    <property name="can-focus">False</property>
+    <property name="type">popup</property>
+    <property name="modal">True</property>
+    <property name="window-position">center</property>
+    <property name="default-width">250</property>
+    <property name="default-height">40</property>
+    <property name="type-hint">notification</property>
+    <property name="skip-taskbar-hint">True</property>
+    <property name="skip-pager-hint">True</property>
+    <property name="accept-focus">False</property>
+    <property name="focus-on-map">False</property>
+    <property name="deletable">False</property>
+    <property name="show-menubar">False</property>
+    <child>
+      <object class="GtkBox">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <child>
+          <object class="GtkImage" id="volume_icon">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="margin-start">15</property>
+            <property name="margin-end">5</property>
+            <property name="pixel-size">28</property>
+            <property name="icon-name">volume-level-high</property>
+            <property name="icon_size">1</property>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="volume_text">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="margin-end">5</property>
+            <property name="label" translatable="yes">38%</property>
+            <attributes>
+              <attribute name="font-desc" value="Ubuntu 14"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="padding">5</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkProgressBar" id="volume_bar">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="valign">center</property>
+            <property name="margin-start">5</property>
+            <property name="margin-end">15</property>
+            <property name="margin-top">15</property>
+            <property name="margin-bottom">15</property>
+            <property name="hexpand">True</property>
+            <property name="fraction">0.38</property>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="pack-type">end</property>
+            <property name="position">2</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
